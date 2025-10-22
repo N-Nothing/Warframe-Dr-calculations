@@ -1,11 +1,6 @@
 import math
 
-try:
-    health: float = input("What is the total health value?\n")
-except ValueError:
-    print("Please enter a valid number for health.")
-    exit(1)
-
+health: float = input("What is the total health value?\n")
 howMany: int = input("How many DR are you stacking?\n")
 print("what are they?")
 
@@ -19,8 +14,8 @@ result = [100 - dr for dr in DR]
 converted = [dr / 100 for dr in result]
 
 total = math.prod(converted)
-
+ehp = float(health) / total
 print(result)
 print(converted)
 print((1 - total) * 100)
-print(health / total)
+print(ehp)
