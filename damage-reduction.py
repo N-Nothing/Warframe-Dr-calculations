@@ -12,9 +12,9 @@ for i in range(int(howMany)):
 
 result = [100 - dr for dr in DR]
 converted = [dr / 100 for dr in result]
-
 total = math.prod(converted)
 ehp = float(health) / total
+
 print(result)
 print(converted)
 print((1 - total) * 100)
