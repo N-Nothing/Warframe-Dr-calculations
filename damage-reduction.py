@@ -5,7 +5,7 @@ print("what are they?")
 
 DR = []
 for i in range(int(howMany)):
-    value = float(input())  # convert input to number
+    value = float(input())  # convert input to float
     DR.append(value)
 
 result = [100 - dr for dr in DR]
